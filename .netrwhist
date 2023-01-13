@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/dan1/inshur-policy-admin'
+let g:netrw_dirhist_2='/Users/dan1/.config/nvim'
+let g:netrw_dirhist_1='/Users/dan1/inshur-customer-web'
+let g:netrw_dirhist_0='/Users/dan1/inshur-customer-web/src'
+let g:netrw_dirhist_9='/Users/dan1/inshur-customer-web/src/reducers'
+let g:netrw_dirhist_8='/Users/dan1/inshur-customer-web/src/actions'
+let g:netrw_dirhist_7='/Users/dan1/inshur-customer-web/src'
+let g:netrw_dirhist_6='/Users/dan1/inshur-customer-web/src/reducers'
+let g:netrw_dirhist_5='/Users/dan1/inshur-customer-web/src/hooks'
+let g:netrw_dirhist_4='/Users/dan1/inshur-customer-web/src'

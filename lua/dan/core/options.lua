@@ -21,6 +21,8 @@ opt.smartcase = true -- if you include mixed case in your search, assumes you wa
 -- cursor line
 opt.cursorline = true -- highlight the current cursor line
 
+
+-- opt.foldmethod = "indent"
 -- appearance
 
 -- turn on termguicolors for nightfly colorscheme to work
@@ -74,7 +76,7 @@ opt.tw = 500
 
 -- opt.ai = "Auto indent"
 -- opt.si = "Smart indent"
--- opt.wrap = "Wrap lines"
+opt.wrap = false
 
 -- set to auto read when a file is changed from the outside
 opt.autoread = true
@@ -87,7 +89,7 @@ opt.autoread = true
 -- opt.guioptions-="L"
 
 
-opt.guicursor = ""
+-- opt.guicursor = ""
 
 -- undo options
 opt.swapfile = false

@@ -1,0 +1,5 @@
+require("dan.plugins-setup")
+require("dan.core.options")
+require("dan.core.keymaps")
+require("dan.core.colorscheme")
+require("dan.plugins")

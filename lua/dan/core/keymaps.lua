@@ -36,12 +36,11 @@ keymap.set({"n", "v"}, "<leader>d", [["_d]])
 -- replaces word vscode style
 keymap.set("n", "<leader>d", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
-
 -- " Open current directory with VSCode 
--- map <leader>vs :! open . -a visual\ studio\ code
+keymap.set("n", "<leader>vs", ":open . -a visual studio code<cr>")
 
 -- " Switch CWD to the directory of the open buffer
--- map <leader>cd :cd %:p:h<cr>:pwd<cr>
+keymap.set("n", "<leader>cd", ":cd %:p:h<cr>:pwd<cr>")
 
 -- " Fast saving
 -- nmap <leader>w :w!<cr>

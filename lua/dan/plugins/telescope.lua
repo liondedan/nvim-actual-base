@@ -21,8 +21,8 @@ telescope.setup({
 local keymap = vim.keymap -- for conciseness
 local builtin = require('telescope.builtin')
 
-keymap.set('n', '<leader>j', builtin.git_files, {}) -- find files within current git directory, respects .gitignore
-keymap.set('n', '<leader>ja', builtin.find_files, {}) -- find files within current working directory
+keymap.set('n', '<leader>j', builtin.find_files, {}) -- find files within current working directory
+keymap.set('n', '<leader>ja', builtin.git_files, {}) -- find files within current git directory, respects .gitignore
 
 -- keymap.set('n', '<leader>g', function()
 -- 	builtin.grep_string({ search = vim.fn.input("Grep > ") })

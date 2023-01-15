@@ -21,7 +21,6 @@ opt.smartcase = true -- if you include mixed case in your search, assumes you wa
 -- cursor line
 opt.cursorline = true -- highlight the current cursor line
 
-
 -- opt.foldmethod = "indent"
 -- appearance
 
@@ -41,7 +40,6 @@ opt.clipboard:append("unnamedplus") -- use system clipboard as default register
 opt.splitright = true -- split vertical window to the right
 opt.splitbelow = true -- split horizontal window to the bottom
 
-
 -- highlight search results
 opt.hlsearch = true
 opt.incsearch = true
@@ -49,13 +47,10 @@ opt.incsearch = true
 --  show matching brackets when text indicator is over them
 opt.showmatch = true
 
-
 -- No annoying sound on errors
 -- opt.noerrorbells = false
 -- opt.novisualbell = false
 opt.tm = 500
-
-
 
 -- Add a bit extra margin to the left
 -- opt.foldcolumn = 1
@@ -63,11 +58,11 @@ opt.tm = 500
 -- Use spaces instead of tabs
 opt.expandtab = true
 
--- Be smart when using tabs 
+-- Be smart when using tabs
 opt.smarttab = true
 
 -- 1 tab == 4 spaces
-opt.shiftwidth = 2 
+opt.shiftwidth = 2
 opt.tabstop = 2
 
 -- linebreak on 500 characters
@@ -81,13 +76,11 @@ opt.wrap = false
 -- set to auto read when a file is changed from the outside
 opt.autoread = true
 
-
 -- disable scrollbars (real hackers don't use scrollbars for navigation!)
 -- opt.guioptions-="r"
 -- opt.guioptions-="R"
 -- opt.guioptions-="l"
 -- opt.guioptions-="L"
-
 
 -- opt.guicursor = ""
 

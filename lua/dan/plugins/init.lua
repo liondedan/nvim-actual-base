@@ -1,5 +1,6 @@
 require("dan.plugins.lualine")
 require("dan.plugins.telescope")
+require("dan.plugins.comment")
 require("dan.plugins.nvim-cmp")
 require("dan.plugins.lsp.mason")
 require("dan.plugins.lsp.lspsaga")

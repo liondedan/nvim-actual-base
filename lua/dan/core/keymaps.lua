@@ -7,8 +7,8 @@ local keymap = vim.keymap -- for conciseness
 keymap.set("n", "<space>", "/")
 keymap.set("n", "<c-space>", "?")
 
--- Switch CWD to the directory of the open buffer
--- keymap.set("n", "<leader>cd :cd %:p:h<cr>:pwd<cr")
+-- Switch CWD to the directory of the open buffer (only works in buffer)
+keymap.set("n", "<leader>cd", ":cd %:p:h<cr>:pwd<cr>")
 
 
 ---------------------
@@ -21,57 +21,37 @@ keymap.set("n", "x", '"_x')
 keymap.set("n", "<C-w>>", ":vertical resize +20<CR>") -- close current split window
 keymap.set("n", "<C-w><", ":vertical resize -20<CR>") -- close current split window
 
-
-
 -- pastes onto selected value
 keymap.set("x", "<leader>p", [["_dP]])
 
 -- yank onto general clipboard
-keymap.set({"n", "v"}, "<leader>y", [["+y]])
+keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 keymap.set("n", "<leader>Y", [["+Y]])
 
 -- deletes without copying
-keymap.set({"n", "v"}, "<leader>d", [["_d]])
+keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 -- replaces word vscode style
 keymap.set("n", "<leader>d", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
--- " Open current directory with VSCode 
+-- " Open current directory with VSCode
 keymap.set("n", "<leader>vs", ":open . -a visual studio code<cr>")
 
 -- " Switch CWD to the directory of the open buffer
-keymap.set("n", "<leader>cd", ":cd %:p:h<cr>:pwd<cr>")
+-- keymap.set("n", "<leader>cd", ":cd %:p:h<cr>:pwd<cr>")
 
 -- " Fast saving
 -- nmap <leader>w :w!<cr>
 keymap.set("n", "<leader>w", ":w!<cr>")
 
-
 -- Git gutter (Git diff)
 -- let g:gitgutter_enabled=1
 -- nnoremap <silent> <leader>d :GitGutterToggle<cr>
 
--- DiffView
--- nnoremap <leader>` :DiffviewOpen<CR>
--- nnoremap <leader>~ :DiffviewClose<CR>
-
-
--- Vimroom
--- let g:goyo_width=100
--- let g:goyo_margin_top = 2
--- let g:goyo_margin_bottom = 2
--- nnoremap <silent> <leader>z :Goyo<cr>
-
-
--- Plug 'yuttie/comfortable-motion.vim'
--- " Comfortable Motion
--- let g:comfortable_motion_scroll_down_key = "j"
--- let g:comfortable_motion_scroll_up_key = "k"
-
 
 -- Spell checking
 -- Pressing ,ss will toggle and untoggle spell checking
--- map <leader>ss :setlocal spell!<cr>
+keymap.set("n", "<leader>ss", ":setlocal spell!<cr>")
 
 
 -- " Return to last edit position when opening files (You want this!)

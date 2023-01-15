@@ -1,10 +1,11 @@
 ## History:
 
-[x] zen mode pluggin
+[x] zen mode plugin
 [x] needs folding keybind, default blindings
 [x] needs diff checker
 [x] cursor smaller on insert mode
 [x] lisp configure
+[x] fix comment
 [] reduce top bar height
 [] find and replace
 [] debugger

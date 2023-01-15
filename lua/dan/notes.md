@@ -7,7 +7,7 @@
 [x] lisp configure
 [x] fix comment
 [] reduce top bar height
-[] find and replace
+[x] find and replace - using native
 [] debugger
 [] telescope search move up and down with <ctr+K>
 [] md viewer
@@ -40,3 +40,18 @@
 `<leader>sl` - see line issue
 `<leader>sl` - show buffer issues
 `<leader>oi` - organise imports
+
+` /`` - in oil to select current directory
+ `cd` - in normal mode to select current buffer director/<
+
+#### Search & Replace
+
+`:s/find_word/replace_word` - find on line and replace
+`:%s/find_word/replace_word` - find on line and replace
+
+`/word/C` - case-sensitive search
+`/word/c` - case-insensitive search
+
+
+### Terminal
+`ls -tr` - sort by last modified (at bottom)

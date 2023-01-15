@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/Users/dan1/.local/share/nvim/site/pack/packer/start/diffview.nvim",
     url = "https://github.com/sindrets/diffview.nvim"
   },
+  ["dracula.nvim"] = {
+    loaded = true,
+    path = "/Users/dan1/.local/share/nvim/site/pack/packer/start/dracula.nvim",
+    url = "https://github.com/Mofiqul/dracula.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/dan1/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -226,11 +231,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/dan1/.local/share/nvim/site/pack/packer/start/vim-maximizer",
     url = "https://github.com/szw/vim-maximizer"
-  },
-  ["vim-nightfly-guicolors"] = {
-    loaded = true,
-    path = "/Users/dan1/.local/share/nvim/site/pack/packer/start/vim-nightfly-guicolors",
-    url = "https://github.com/bluz71/vim-nightfly-guicolors"
   },
   ["vim-surround"] = {
     loaded = true,

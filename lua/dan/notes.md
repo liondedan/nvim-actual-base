@@ -7,10 +7,14 @@
 - [x] lisp configure
 - [x] fix comment
 - [x] find and replace - using native
-- [ ] debugger
 - [x] md viewer
-- [ ] make iterm faster
-- [ ] autcomplete iterm
+- [x] make nvim default git editor
+- [x] autcomplete iterm
+- [ ] make iterm faster (think it's related to gcloud auth)
+- [ ] debugger
+- [ ] back to previous file
+- [ ] delete without lose
+- [ ] vscode style select multiple occurances of selection
 
 ## Keybinds
 

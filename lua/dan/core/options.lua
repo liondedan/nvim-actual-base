@@ -12,7 +12,7 @@ opt.autoindent = true -- copy indent from current line when starting new one
 opt.smartindent = true
 
 -- line wrapping
-opt.wrap = false -- disable line wrapping
+opt.wrap = true -- enable line wrapping
 
 -- search settings
 opt.ignorecase = true -- ignore case when searching
@@ -62,7 +62,7 @@ opt.expandtab = true
 opt.smarttab = true
 
 -- 1 tab == 4 spaces
-opt.shiftwidth = 2
+opt.shiftwidth = 3
 opt.tabstop = 2
 
 -- linebreak on 500 characters
@@ -71,7 +71,6 @@ opt.tw = 500
 
 -- opt.ai = "Auto indent"
 -- opt.si = "Smart indent"
-opt.wrap = false
 
 -- set to auto read when a file is changed from the outside
 opt.autoread = true

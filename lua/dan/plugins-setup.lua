@@ -100,6 +100,16 @@ return packer.startup(function(use)
 		end,
 	})
 
+	-- cutlass
+	use({
+		"gbprod/cutlass.nvim",
+		config = function()
+			require("cutlass").setup({
+				cut_key = "m",
+			})
+		end,
+	})
+
 	-- auto closing
 	use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
@@ -117,6 +127,8 @@ return packer.startup(function(use)
 			vim.fn["mkdp#util#install"]()
 		end,
 	})
+
+	use("github/copilot.vim")
 
 	if packer_bootstrap then
 		require("packer").sync()

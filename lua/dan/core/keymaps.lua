@@ -10,6 +10,7 @@ keymap.set("n", "<c-space>", "?")
 -- Switch CWD to the directory of the open buffer (only works in buffer)
 keymap.set("n", "<leader>cd", ":cd %:p:h<cr>:pwd<cr>")
 
+keymap.set("n", "<leader>nt", ":e ~/notes/quick_note.md")
 
 ---------------------
 -- General Keymaps
@@ -48,11 +49,9 @@ keymap.set("n", "<leader>w", ":w!<cr>")
 -- let g:gitgutter_enabled=1
 -- nnoremap <silent> <leader>d :GitGutterToggle<cr>
 
-
 -- Spell checking
 -- Pressing ,ss will toggle and untoggle spell checking
 keymap.set("n", "<leader>ss", ":setlocal spell!<cr>")
-
 
 -- " Return to last edit position when opening files (You want this!)
 -- au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif

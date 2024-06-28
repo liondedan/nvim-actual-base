@@ -44,6 +44,7 @@
 - `:%s/find_word/replace_word` - find on line and replace
 - `/word/C` - case-sensitive search
 - `/word/c` - case-insensitive search
+- find the word with a search (space), then `cgn` on first instance to repalce it, then use n/N to find next occuance and `.` to replace
 
 ### Terminal
 

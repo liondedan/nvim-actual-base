@@ -70,20 +70,27 @@ return packer.startup(function(use)
 	use("rafamadriz/friendly-snippets") -- useful snippets
 
 	-- managing & installing lsp servers, linters & formatters
-	use("williamboman/mason.nvim") -- in charge of managing lsp servers, linters & formatters
-	use("williamboman/mason-lspconfig.nvim") -- bridges gap b/w mason & lspconfig
+	-- use("williamboman/mason.nvim") -- in charge of managing lsp servers, linters & formatters
+	-- use("williamboman/mason-lspconfig.nvim") -- bridges gap b/w mason & lspconfig
+
+	use({
+		"VonHeikemen/lsp-zero.nvim",
+		branch = "v3.x",
+		requires = {
+			--- Uncomment these if you want to manage LSP servers from neovim
+			{ "williamboman/mason.nvim" },
+			{ "williamboman/mason-lspconfig.nvim" },
+
+			-- LSP Support
+			{ "neovim/nvim-lspconfig" },
+			-- Autocompletion
+			{ "hrsh7th/nvim-cmp" },
+			{ "hrsh7th/cmp-nvim-lsp" },
+			{ "L3MON4D3/LuaSnip" },
+		},
+	})
 
 	-- configuring lsp servers
-	use("neovim/nvim-lspconfig") -- easily configure language servers
-	use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
-	-- use({ "glepnir/lspsaga.nvim", branch = "main" })
-	use({
-		"glepnir/lspsaga.nvim",
-		branch = "main",
-		config = function()
-			require("lspsaga").setup({})
-		end,
-	}) -- enhanced lsp uis
 	use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
 	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 
@@ -122,34 +129,33 @@ return packer.startup(function(use)
 	use("sindrets/diffview.nvim")
 
 	use({
+		"olexsmir/gopher.nvim",
+		requires = { -- dependencies
+			"nvim-lua/plenary.nvim",
+			"nvim-treesitter/nvim-treesitter",
+		},
+	})
+
+	use({
 		"iamcco/markdown-preview.nvim",
 		run = function()
 			vim.fn["mkdp#util#install"]()
 		end,
 	})
 
-	use({
-		"folke/noice.nvim",
-		config = function()
-			require("noice").setup({
-				-- add any options here
-				-- routes = {
-				--   {
-				--     view = "notify",
-				--     filter = { event = "msg_showmode" },
-				--   },
-				-- },
-			})
-		end,
-		requires = {
-			-- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
-			"MunifTanjim/nui.nvim",
-			-- OPTIONAL:
-			--   `nvim-notify` is only needed, if you want to use the notification view.
-			--   If not available, we use `mini` as the fallback
-			"rcarriga/nvim-notify",
-		},
-	})
+	-- use({
+	-- 	"folke/noice.nvim",
+	-- 	config = function()
+	-- 		require("noice").setup()
+	-- 	end,
+	-- 	requires = {
+	-- 		"MunifTanjim/nui.nvim",
+	-- 		-- OPTIONAL:
+	-- 		--   `nvim-notify` is only needed, if you want to use the notification view.
+	-- 		--   If not available, we use `mini` as the fallback
+	-- 		"rcarriga/nvim-notify",
+	-- 	},
+	-- })
 
 	use("github/copilot.vim")
 
